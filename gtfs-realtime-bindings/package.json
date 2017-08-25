@@ -1,0 +1,66 @@
+{
+  "_from": "gtfs-realtime-bindings",
+  "_id": "gtfs-realtime-bindings@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-GEfd/Y6uuThbsIkIRq8ZmoGelKU=",
+  "_location": "/gtfs-realtime-bindings",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "gtfs-realtime-bindings",
+    "name": "gtfs-realtime-bindings",
+    "escapedName": "gtfs-realtime-bindings",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gtfs-realtime-bindings/-/gtfs-realtime-bindings-0.0.4.tgz",
+  "_shasum": "1847ddfd8eaeb9385bb0890846af199a819e94a5",
+  "_spec": "gtfs-realtime-bindings",
+  "_where": "E:\\doc\\git\\test2",
+  "author": {
+    "name": "Google Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/google/gtfs-realtime-bindings/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "protobufjs": "2.0.5"
+  },
+  "deprecated": false,
+  "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
+  "devDependencies": {
+    "mocha": "1.19.0",
+    "should": "3.3.1"
+  },
+  "engines": [
+    "node >= 0.10.0"
+  ],
+  "homepage": "https://github.com/google/gtfs-realtime-bindings#readme",
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "main": "gtfs-realtime.js",
+  "name": "gtfs-realtime-bindings",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/google/gtfs-realtime-bindings.git"
+  },
+  "scripts": {
+    "buildProto": "node_modules/protobufjs/bin/proto2js ../gtfs-realtime.proto -commonjs > gtfs-realtime.js",
+    "test": "mocha test/*.js"
+  },
+  "tags": [
+    "gtfs-realtime"
+  ],
+  "version": "0.0.4"
+}
