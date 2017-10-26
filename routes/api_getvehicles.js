@@ -19,7 +19,7 @@ function gtfsrt_feed (gtfs_url) {
       if (!error && response.statusCode == 200) {
         var gtfs_data = GtfsRealtimeBindings.FeedMessage.decode(body);
         _feed = JSON.parse(JSON.stringify(gtfs_data));
-        console.log("feed updated?");
+        console.log("GTFS-RT feed updated");
       }
     });
   };
