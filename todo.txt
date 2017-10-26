@@ -1,0 +1,28 @@
+-Clean up code
+    -Separate functions into more functions
+    -Move settings into config file
+-Use create-react-app instead
+
+-Hide other bus stop markers when showing vehicle locations
+-Zoom out when showing vehicle locations
+-Show better info for vehicle locations
+-List vehicles in table under the map
+
+-Separate colours or icons for different marker types
+-Disable marker clustering when zoomed in
+-Show path of each route on map
+-Make the table look better
+    -Probably change the spacing at least
+    -Change how the buttons look
+    -Highlight currently shown vehicles on route
+-Show current route under map when showing vehicle locations
+-Periodically update the gtfs-rt data on server-side
+-Periodically update the vehicle locations client-side
+-Use additional information available in the gtfs-rt data
+-Remove/replace express placeholder text
+-Remove console.log debugging messages when done
+-Improve performance for vehicle location api
+-Cache requests 
+    -for bus stop info on server-side
+    -for bus stop info on client-side
+-Add search feature to the map
