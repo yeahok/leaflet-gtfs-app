@@ -71,6 +71,5 @@ router.get('/', function(req, res, next) {
 
 var translink_gtfs = new gtfsrt_feed('https://gtfsrt.api.translink.com.au/Feed/SEQ');
 translink_gtfs.updateGTFS();
-console.log("test");
 
 module.exports = router;
