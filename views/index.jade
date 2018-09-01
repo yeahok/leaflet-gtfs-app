@@ -12,12 +12,11 @@ html
     script(type='text/javascript' src="/javascripts/stopnames-min.js")
     
   body
-    block content
       h1= title
-      p Welcome to #{title}
       div(id="map")
       div
         h3(id="stopinfo")
         h4(id="vehicleinfo")
-        table(id="listinfo")
+        div(id="listscroll")
+          table(id="listinfo")
   include ./map
