@@ -8,7 +8,13 @@ script.
 
     //var map = L.map('map', {center: latlng, zoom: 13, layers: [tiles]}); default zoom
     var map = L.map('map', {center: latlng, zoom: 17, layers: [tiles]}); //testing zoom
-    
+
+    var busIcon = new L.Icon({
+        iconUrl: '/images/bus-icon.png',
+        iconSize: [30, 30],
+        iconAnchor: [15, 15]
+    });
+
     var onMarkerClick = function(e){ //i should probably clean up this entire function
         //console.log(this.options.id);
         var title = document.getElementById("stopinfo");
@@ -85,7 +91,7 @@ script.
                 var long = v.vehicle.position.longitude;
                 console.log(v);
                 var id = v.id;
-                var marker = L.marker(L.latLng(lat, long), { id: id });
+                var marker = L.marker(L.latLng(lat, long), { id: id, icon: busIcon });
                 marker.bindPopup(id);
                 vehicleMarkers.push(marker);
                 map.addLayer(vehicleMarkers[i]);
